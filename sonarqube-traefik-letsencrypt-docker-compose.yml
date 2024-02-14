@@ -78,7 +78,7 @@
 
 networks:
   sonarqube-network:
-    external: true
+    external: false
   # traefik-network:
   #   external: true
 
