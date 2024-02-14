@@ -100,10 +100,10 @@ services:
       POSTGRES_USER: ${SONARQUBE_DB_USER}
       POSTGRES_PASSWORD: ${SONARQUBE_DB_PASSWORD}
     #   POSTGRES_PORT: 5433
-    # expose:
-    #   - "5433" # Publishes 5433 to other containers but NOT to host machine
-    # ports:
-    #   - "5433:5433"
+    expose:
+      - "5432" # Publishes 5433 to other containers but NOT to host machine
+    ports:
+      - "5433:5432"
     # command: -p 5433
     networks:
       - sonarqube-network
