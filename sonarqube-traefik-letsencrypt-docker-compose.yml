@@ -99,7 +99,6 @@ services:
       POSTGRES_DB: ${SONARQUBE_DB_NAME}
       POSTGRES_USER: ${SONARQUBE_DB_USER}
       POSTGRES_PASSWORD: ${SONARQUBE_DB_PASSWORD}
-      - PGPORT: 5433
     networks:
       - sonarqube-network
     healthcheck:
