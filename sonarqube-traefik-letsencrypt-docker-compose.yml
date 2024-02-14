@@ -113,6 +113,8 @@ services:
     image: ${SONARQUBE_IMAGE_TAG}
     volumes:
       - sonarqube-data:${DATA_PATH}
+    ports:
+      - "9000:9000"
     environment:
       SONARQUBE_DATABASE_HOST: postgres
       SONARQUBE_DATABASE_PORT_NUMBER: 5433
